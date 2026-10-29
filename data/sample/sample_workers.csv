@@ -1,0 +1,21 @@
+worker_id,preferred_weekly_hours,preferred_shift_length,max_weekly_hours,role
+W01,5,6,25,Desk Assistant
+W02,12,7,25,Desk Assistant
+W03,13,8,25,Desk Assistant
+W04,11,5,25,Desk Assistant
+W05,15,6,25,Desk Assistant
+W06,9,6,25,Desk Assistant
+W07,9,7,25,Desk Assistant
+W08,10,3,25,Desk Assistant
+W09,12,8,25,Desk Assistant
+W10,13,4,25,Desk Assistant
+W11,14,3,25,Desk Assistant
+W12,8,7,25,Desk Assistant
+W13,10,7,25,Desk Assistant
+W14,12,3,25,Desk Assistant
+W15,9,8,25,Desk Assistant
+W16,8,4,25,Desk Assistant
+W17,8,6,25,Desk Assistant
+W18,12,7,25,Desk Assistant
+W19,5,7,25,Desk Assistant
+W20,5,8,25,Desk Assistant

@@ -1,0 +1,13 @@
+# Workforce Scheduling with Fuzzy Logic and Genetic Algorithm
+# Pinned dependencies for Python 3.11 Windows environment
+streamlit>=1.35.0,<=1.66.1
+pandas>=2.2.0,<=3.1.0
+numpy>=1.26.0,<=2.4.6
+matplotlib>=3.8.0,<=3.11.2
+plotly>=5.20.0,<=7.1.0
+openpyxl>=3.1.2,<=3.1.5
+pytest>=8.1.0,<=9.2.0
+pyyaml>=6.0.1,<=6.0.3
+scipy>=1.13.0,<=1.17.1
+scikit-fuzzy>=0.4.2,<=0.5.0
+tabulate>=0.9.0,<=0.10.0

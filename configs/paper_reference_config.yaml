@@ -1,0 +1,42 @@
+# Configuration matching the reference paper:
+# "Fuzzy Logic – Based Scheduling System for Part-Time Workforce" by Tri Nguyen and Kelly Cohen
+
+scenario:
+  name: "paper_reference_scenario"
+  num_workers: 20
+  operating_days: 5
+  hours_per_day: [11, 11, 11, 11, 7]  # Total 51 hours per week
+  demand_per_slot: 4                  # 4 workers per hour -> 204 worker-hours
+  max_weekly_hours: 25.0              # Strict institutional limit
+  min_shift_length: 1.0               # Minimum shift duration
+  slot_duration_hours: 1.0
+
+preferences:
+  pref_weekly_hours_min: 5.0
+  pref_weekly_hours_max: 15.0
+  pref_shift_length_min: 3.0
+  pref_shift_length_max: 8.0
+
+fuzzy:
+  universe_weekly_hours: [0.0, 60.0]
+  universe_daily_hours: [0.0, 12.0]
+  universe_output: [0.0, 1.0]
+  defuzzification: "centroid"
+  continuity_scaling_factor: 1.35
+
+genetic_algorithm:
+  population_size: 200                # Table 1: 200
+  max_generations: 50                 # Table 1: 50
+  stall_generations: 10               # Table 1: 10
+  crossover_rate: 0.8                 # Table 1: 0.8
+  mutation_rate: 0.2                  # Table 1: 0.2 (rest 20% undergoes mutation)
+  elite_count: 10                     # Table 1: 10
+  scenarios_per_candidate: 30         # Table 1: n = 30
+  chromosome_size: 34                 # Table 1: 34
+  random_seed: 42
+  selection_type: "roulette_wheel"
+
+evaluation:
+  test_scenarios_standard: 200        # Paper Section 6: 200 test scenarios (20 workers)
+  test_scenarios_understaffed: 200    # Paper Section 6: 200 test scenarios (16 workers)
+  understaffed_worker_count: 16
