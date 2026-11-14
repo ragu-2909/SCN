@@ -185,4 +185,4 @@ SCN aat/
 - **Understaffed Infeasible Warning:**
   If custom data contains slots where available workers < demand, the app will flag the scenario as infeasible before optimization rather than producing invalid assignments.
 #   S C N  
- 
+ "# SCN_AAT" 
